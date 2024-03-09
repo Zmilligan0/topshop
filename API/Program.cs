@@ -19,6 +19,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 // Adds a service that's life lasts the length of the HTTP request
 // Links to the Interface and corresponding Infrastrucure class
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 
 var app = builder.Build();
