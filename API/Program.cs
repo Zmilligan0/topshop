@@ -20,6 +20,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 // Links to the Interface and corresponding Infrastrucure class
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
 var app = builder.Build();
@@ -31,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//Serve static files
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
