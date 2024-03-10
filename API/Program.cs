@@ -30,6 +30,8 @@ if (app.Environment.IsDevelopment())
 //Serve static files
 app.UseStaticFiles();
 
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();
