@@ -479,3 +479,6 @@ API/appsettings.json
 API/topshop.db
 API/topshop.db-shm
 API/topshop.db-wal
+API/identity.db
+API/identity.db-shm
+API/identity.db-wal
