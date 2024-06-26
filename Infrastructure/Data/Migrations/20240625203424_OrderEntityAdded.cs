@@ -39,7 +39,7 @@ namespace Infrastructure.Data.Migrations
                     ShipToAddressStreet = table.Column<string>(name: "ShipToAddress_Street", type: "TEXT", nullable: true),
                     ShipToAddressCity = table.Column<string>(name: "ShipToAddress_City", type: "TEXT", nullable: true),
                     ShipToAddressState = table.Column<string>(name: "ShipToAddress_State", type: "TEXT", nullable: true),
-                    ShipToAddressZipCode = table.Column<string>(name: "ShipToAddress_ZipCode", type: "TEXT", nullable: true),
+                    ShipToAddressZipcode = table.Column<string>(name: "ShipToAddress_Zipcode", type: "TEXT", nullable: true),
                     DeliveryMethodId = table.Column<int>(type: "INTEGER", nullable: true),
                     Subtotal = table.Column<double>(type: "REAL", nullable: false),
                     Status = table.Column<string>(type: "TEXT", nullable: false),
