@@ -4,5 +4,9 @@ button.nav-link {
   border: none;
   color: #333;
 }
+button.nav-link:disabled:not(.active) {
+  background: #e9ecef;
+  color: #333;
+}
 
 /*# sourceMappingURL=stepper.component.css.map */

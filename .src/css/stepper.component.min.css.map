@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../client/src/app/shared/components/stepper/stepper.component.scss"],"names":[],"mappings":"AAAA,gBACI,kBAAA,CACA,eAAA,CACA,WAAA,CACA,UAAA","file":"stepper.component.min.css"}
+{"version":3,"sources":["../../client/src/app/shared/components/stepper/stepper.component.scss"],"names":[],"mappings":"AAAA,gBACI,kBAAA,CACA,eAAA,CACA,WAAA,CACA,UAAA,CAEA,sCACI,kBAAA,CACA,UAAA","file":"stepper.component.min.css"}
