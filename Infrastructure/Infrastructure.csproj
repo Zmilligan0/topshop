@@ -3,12 +3,14 @@
       <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
       <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.35.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.18" />
       <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
       <PackageReference Include="Stripe.net" Version="45.5.0" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Data\SeedData\**" CopyToOutputDirectory="PreserveNewest" />
     <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 

@@ -15,7 +15,7 @@ namespace API.Extensions
 
             services.AddDbContext<StoreContext>(opt =>
             {
-                opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
+                opt.UseNpgsql(config.GetConnectionString("DefaultConnection"));
             });
 
             // Adds a service that's life lasts the length of the HTTP request
